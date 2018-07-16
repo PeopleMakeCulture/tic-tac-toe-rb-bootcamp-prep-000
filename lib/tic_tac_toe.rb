@@ -40,7 +40,7 @@ def turn(board)
     index = input_to_index(user_number)
   else
   #makes valid moves
-    move(board, index, char="X")
+    move(board, index, char)
   #displays board
     display_board(board)
    end
