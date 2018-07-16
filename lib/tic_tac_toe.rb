@@ -32,7 +32,7 @@ def turn(board)
   index = input_to_index(user_number)
   # validates
 
-  if valid_move?(board,index) == false
+  if !(valid_move?(board,index))
   # asks for input again
     puts "Not a valid move. Try again."
     turn(board)
