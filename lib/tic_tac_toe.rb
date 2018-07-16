@@ -12,7 +12,7 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(board, index, X_or_O)
+def move(board, index, sign)
   board[index] = X_or_O
 end
 
