@@ -26,6 +26,7 @@ end
 
 def turn_count(board)
   moves = board.select {|char| char != " "}
+  return moves.number
 #  it 'counts occupied positions' do
 #    board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
 end
