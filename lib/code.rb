@@ -15,10 +15,11 @@ def turn(board)
   puts "Please enter 1-9:"
   user_number = gets.strip
   index = input_to_index(user_number)
-
   if valid_move?(board,index) == false
-  # asks for input again
     puts "Not a valid move. Try again."
     turn(board)
-   end
+  else
+    move(board, index, sign)
   end
+end
+
