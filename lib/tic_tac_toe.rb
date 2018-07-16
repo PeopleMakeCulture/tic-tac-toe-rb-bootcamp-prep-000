@@ -13,7 +13,7 @@ def input_to_index(user_input)
 end
 
 def move(board, index, sign)
-  board[index] = X_or_O
+  board[index] = sign
 end
 
 def position_taken?(board, location)
