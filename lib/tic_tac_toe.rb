@@ -25,6 +25,8 @@ def valid_move?(board, index)
 end
 
 def turn
+  if valid_move?(board,index)
+    move(board,index,player_token = current_player)
 end
 
 def turn_count(board)
