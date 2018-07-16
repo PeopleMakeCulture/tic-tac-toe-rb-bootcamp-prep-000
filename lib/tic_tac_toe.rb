@@ -39,11 +39,6 @@ def current_player(board)
   turn_count(board) % 2 == 1? "X" : "O"
 end
 
-
-def current_player(board)
-#  it 'returns the correct player, X, for the third move' do
-end
-
 def won?(board)
 
   WIN_COMBINATIONS.each do |combo|
