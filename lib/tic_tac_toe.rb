@@ -24,13 +24,13 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
 
-def turn_count
+def turn_count(board)
 #  it 'counts occupied positions' do
 #    board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
 end
 
 
-def current_player
+def current_player(board)
 #  it 'returns the correct player, X, for the third move' do
 end
 
