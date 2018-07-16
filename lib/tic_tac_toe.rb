@@ -24,14 +24,14 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
 
+def turn_count
+#  it 'counts occupied positions' do
+#    board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
+end
 
-# Define your play method below
-def play(board)
-  counter = 0
-  while counter < 9
-    turn(board)
-    counter += 1
-  end
+
+def current_player
+#  it 'returns the correct player, X, for the third move' do
 end
 
 def won?(board)
@@ -61,5 +61,14 @@ def winner(board)
   if won?(board)
     win_array = won?(board)
     return board[win_array[0]]
+  end
+end
+
+# Define your play method below
+def play(board)
+  counter = 0
+  while counter < 9
+    turn(board)
+    counter += 1
   end
 end
