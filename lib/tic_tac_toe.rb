@@ -25,6 +25,7 @@ def valid_move?(board, index)
 end
 
 def turn_count(board)
+  moves = board.select {|char| char != " "}
 #  it 'counts occupied positions' do
 #    board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
 end
