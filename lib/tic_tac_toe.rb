@@ -43,3 +43,33 @@ def play(board)
     counter += 1
   end
 end
+
+def won?(board)
+
+  WIN_COMBINATIONS.each do |combo|
+    return combo if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X" ||
+    board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O" )
+  end
+
+  false if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+end
+
+def full?(board)
+  true if board.none?{|i| i == " "}
+end
+
+def draw?(board)
+  true if full?(board) && !(won?(board))
+end
+
+def over?(board)
+  true if won?(board) || draw?(board) || full?(board)
+end
+
+def winner(board)
+  if won?(board)
+    win_array = won?(board)
+    return board[win_array[0]]
+  end
+end
